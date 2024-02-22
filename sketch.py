@@ -19,14 +19,14 @@ def main():
     window.resizable(False, False)
 
     # Create a canvas
-    canvas = tk.Canvas(window, width=320, height=320)
+    canvas = tk.Canvas(window, width=640, height=320)
     canvas.pack()
 
     # Set the background color
     canvas.config(bg="white")
 
     # Create a walker
-    walker = Walker(width=320, height=320)
+    walker = Walker(width=640, height=320)
     draw(walker, canvas)
 
     # Run the Tkinter event loop
